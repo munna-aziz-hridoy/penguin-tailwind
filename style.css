@@ -1,0 +1,49 @@
+/* google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root {
+  --heading-font: "Bebas Neue", cursive;
+}
+
+.container {
+  max-width: 90% !important;
+}
+
+.btn-green {
+  background: linear-gradient(180deg, #a4bc46 0%, #85a019 100%);
+  width: 12rem;
+  height: 3.5rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.btn-sm {
+  width: 10rem;
+  height: 3.5rem;
+  font-size: 1.1rem;
+}
+
+.header {
+  background: #fffbf0;
+}
+
+.header-heading,
+.section-heading {
+  font-family: var(--heading-font);
+}
+
+@media screen and (max-width: 480px) {
+  .btn-green {
+    font-size: 0.9rem;
+    width: 8.5rem;
+    height: 2.8rem;
+  }
+}

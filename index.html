@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awosome -->
+    <script
+      src="https://kit.fontawesome.com/4bdae2f90f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Tail wind script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tail wind custom variables -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              highLight: "#FABE4C",
+              titleColor: "#363958",
+              textColor: "#3E3E3E",
+              bodyColor: "#E5E5E5",
+              imgColor: "#F1F1F1",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Penguin-Fashion || TailWind-Styles</title>
+  </head>
+  <body>
+    <header class="header pt-5 pb-14">
+      <nav class="container mx-auto flex justify-between items-center h-16">
+        <div class="w-72 h-10">
+          <a href="#">
+            <img class="w-full" src="images/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="lg:hidden block">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="lg:flex gap-8 hidden">
+          <li class="text-lg font-semibold capitalize text-stone-800">
+            <a href="#">home</a>
+          </li>
+          <li class="text-lg font-semibold capitalize text-stone-800">
+            <a href="#">product</a>
+          </li>
+          <li class="text-lg font-semibold capitalize text-stone-800">
+            <a href="#">about us</a>
+          </li>
+          <li class="text-lg font-semibold capitalize text-stone-800">
+            <a href="#">contact us</a>
+          </li>
+        </ul>
+      </nav>
+      <section
+        class="container mx-auto md:flex justify-between items-center py-16"
+      >
+        <div class="flex flex-col gap-8">
+          <h1
+            class="text-4xl md:text-6xl font-bold uppercase text-titleColor header-heading"
+          >
+            <span class="text-highLight block">be the penguins</span>
+            of winter
+          </h1>
+          <p class="text-lg text-textColor">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
+            dolorem odit possimus blanditiis saepe dignissimos!
+          </p>
+          <a class="btn-green" href="#">
+            <i class="fas fa-shopping-cart"></i>
+            buy now
+          </a>
+        </div>
+        <div>
+          <img src="images/model.png" alt="" />
+        </div>
+      </section>
+    </header>
+
+    <!-- main content -->
+    <main>
+      <!-- product section -->
+
+      <section class="container mx-auto py-16">
+        <!-- women jacket -->
+
+        <h2
+          class="section-heading text-3xl md:text-4xl uppercase text-titleColor"
+        >
+          women jacket
+        </h2>
+        <div
+          class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 py-10"
+        >
+          <!-- jacket 1 -->
+          <div class="product-item shadow-xl px-8 py-6 rounded-3xl">
+            <div class="product-img bg-imgColor p-5 rounded-3xl">
+              <img class="w-full" src="images/jacket-1.png" alt="" />
+            </div>
+            <h3 class="text-2xl text-titleColor capitalize font-semibold my-3">
+              yellow coat jacket
+            </h3>
+            <p class="text-textColor">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
+              ratione velit architecto pariatur quos libero!
+            </p>
+            <div class="product-footer flex justify-between my-3">
+              <span class="text-highLight font-bold text-4xl">$164</span>
+              <a class="btn-green btn-sm" href="#">
+                <i class="fas fa-shopping-cart"></i>
+                buy now
+              </a>
+            </div>
+          </div>
+
+          <!-- jacket 2 -->
+          <div class="product-item shadow-xl px-8 py-6 rounded-3xl">
+            <div class="product-img bg-imgColor p-5 rounded-3xl">
+              <img class="w-full" src="images/jacket-2.png" alt="" />
+            </div>
+            <h3 class="text-2xl text-titleColor capitalize font-semibold my-3">
+              ladies jacket
+            </h3>
+            <p class="text-textColor">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
+              ratione velit architecto pariatur quos libero!
+            </p>
+            <div class="product-footer flex justify-between my-3">
+              <span class="text-highLight font-bold text-4xl">$340</span>
+              <a class="btn-green btn-sm" href="#">
+                <i class="fas fa-shopping-cart"></i>
+                buy now
+              </a>
+            </div>
+          </div>
+
+          <!-- jacket 3 -->
+          <div class="product-item shadow-xl px-8 py-6 rounded-3xl">
+            <div class="product-img bg-imgColor p-5 rounded-3xl">
+              <img class="w-full" src="images/jacket-3.png" alt="" />
+            </div>
+            <h3 class="text-2xl text-titleColor capitalize font-semibold my-3">
+              women leather jacket
+            </h3>
+            <p class="text-textColor">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
+              ratione velit architecto pariatur quos libero!
+            </p>
+            <div class="product-footer flex justify-between my-3">
+              <span class="text-highLight font-bold text-4xl">$34</span>
+              <a class="btn-green btn-sm" href="#">
+                <i class="fas fa-shopping-cart"></i>
+                buy now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Men jacket -->
+        <h2
+          class="section-heading text-3xl md:text-5xl uppercase text-titleColor mt-20"
+        >
+          men jacket
+        </h2>
+        <div
+          class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 py-10"
+        >
+          <!-- jacket 1 -->
+          <div class="product-item shadow-xl px-8 py-6 rounded-3xl">
+            <div class="product-img bg-imgColor p-5 rounded-3xl">
+              <img class="w-full" src="images/jacket-4.png" alt="" />
+            </div>
+            <h3 class="text-2xl text-titleColor capitalize font-semibold my-3">
+              snowboard jacket mens
+            </h3>
+            <p class="text-textColor">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
+              ratione velit architecto pariatur quos libero!
+            </p>
+            <div class="product-footer flex justify-between my-3">
+              <span class="text-highLight font-bold text-4xl">$303</span>
+              <a class="btn-green btn-sm" href="#">
+                <i class="fas fa-shopping-cart"></i>
+                buy now
+              </a>
+            </div>
+          </div>
+
+          <!-- jacket 2 -->
+          <div class="product-item shadow-xl px-8 py-6 rounded-3xl">
+            <div class="product-img bg-imgColor p-5 rounded-3xl">
+              <img class="w-full" src="images/jacket-5.png" alt="" />
+            </div>
+            <h3 class="text-2xl text-titleColor capitalize font-semibold my-3">
+              men leather jacket
+            </h3>
+            <p class="text-textColor">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
+              ratione velit architecto pariatur quos libero!
+            </p>
+            <div class="product-footer flex justify-between my-3">
+              <span class="text-highLight font-bold text-4xl">$140</span>
+              <a class="btn-green btn-sm" href="#">
+                <i class="fas fa-shopping-cart"></i>
+                buy now
+              </a>
+            </div>
+          </div>
+
+          <!-- jacket 3 -->
+          <div class="product-item shadow-xl px-8 py-6 rounded-3xl">
+            <div class="product-img bg-imgColor p-5 rounded-3xl">
+              <img class="w-full" src="images/jacket-6.png" alt="" />
+            </div>
+            <h3 class="text-2xl text-titleColor capitalize font-semibold my-3">
+              man casual jacket
+            </h3>
+            <p class="text-textColor">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
+              ratione velit architecto pariatur quos libero!
+            </p>
+            <div class="product-footer flex justify-between my-3">
+              <span class="text-highLight font-bold text-4xl">$104</span>
+              <a class="btn-green btn-sm" href="#">
+                <i class="fas fa-shopping-cart"></i>
+                buy now
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benifits section -->
+
+      <section class="container mx-auto py-16">
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 items-center gap-8">
+          <div class="flex flex-col gap-8">
+            <div
+              class="flex flex-col md:flex-row gap-4 items-center shadow-xl p-4 rounded-2xl"
+            >
+              <img src="images/house.png" class="w-24" alt="" />
+              <div class="">
+                <h2
+                  class="text-2xl font-semibold text-textColor capitalize text-center md:text-left"
+                >
+                  find the perfect fit
+                </h2>
+                <p class="text-textColor text-center md:text-left">
+                  Everybody is different, which is why we offer styles for
+                  everybody
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row gap-4 items-center shadow-xl p-4 rounded-2xl"
+            >
+              <img src="images/box.png" class="w-24" alt="" />
+              <div>
+                <h2
+                  class="text-2xl font-semibold text-textColor capitalize text-center md:text-left"
+                >
+                  free exchanges
+                </h2>
+                <p class="text-textColor text-center md:text-left">
+                  One of the many reson you can shop with peace of mind
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row gap-4 items-center shadow-xl p-4 rounded-2xl"
+            >
+              <img src="images/question.png" class="w-24" alt="" />
+              <div>
+                <h2
+                  class="text-2xl font-semibold text-textColor capitalize text-center md:text-left"
+                >
+                  contact our seller
+                </h2>
+                <p class="text-textColor text-center md:text-left">
+                  They are here to help you. That's quite literally whatwe pay
+                  them for
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="images/shopping.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
